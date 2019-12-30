@@ -63,7 +63,7 @@ print(y_predprob)
 
 # In[13]:
 
-data = pd.DataFrame({'LEVEL':y_predprob})
+data = pd.DataFrame({'ID':y_predprob})
 data.to_csv("dvc_data/ans.csv")
 print(data)
 
