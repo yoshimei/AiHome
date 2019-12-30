@@ -72,7 +72,7 @@ X = heart.drop(['Y','ID'], axis=1)
 y =heart['Y'] 
 
  
-#不管任何参数，都用默认的，拟合下数据看看
+
 rf0 = RandomForestClassifier(oob_score=True,max_depth=100,max_leaf_nodes=60,n_estimators=110,max_features=0.5, 
                              min_samples_leaf=2, min_samples_split=4, random_state=105,n_jobs=1,bootstrap=True)
 rf0.fit(X,y)
